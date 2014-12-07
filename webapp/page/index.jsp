@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" import="com.minws.sso.auth.QQUserInfo" contentType="text/html; charset=UTF-8"%>
+<%@ page language="java" import="java.util.*" contentType="text/html; charset=UTF-8"%>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path;
@@ -18,6 +18,6 @@
 	<script src="<%=basePath%>/static/js/modernizr.custom.20819.js"></script>
 </head>
 <body>
-	
+	这是首页
 </body>
 </html>
