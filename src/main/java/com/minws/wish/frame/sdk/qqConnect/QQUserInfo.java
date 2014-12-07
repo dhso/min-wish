@@ -1,4 +1,4 @@
-package com.minws.wish.frame.sdk;
+package com.minws.wish.frame.sdk.qqConnect;
 
 import java.io.Serializable;
 

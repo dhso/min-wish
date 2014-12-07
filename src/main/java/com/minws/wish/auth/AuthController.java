@@ -17,10 +17,10 @@ import org.apache.http.client.ClientProtocolException;
 
 import com.jfinal.aop.Before;
 import com.jfinal.core.Controller;
-import com.minws.wish.frame.sdk.QQConnect;
-import com.minws.wish.frame.sdk.QQMe;
-import com.minws.wish.frame.sdk.QQToken;
-import com.minws.wish.frame.sdk.QQUserInfo;
+import com.minws.wish.frame.sdk.qqConnect.QQConnect;
+import com.minws.wish.frame.sdk.qqConnect.QQMe;
+import com.minws.wish.frame.sdk.qqConnect.QQToken;
+import com.minws.wish.frame.sdk.qqConnect.QQUserInfo;
 import com.minws.wish.frame.util.AceUtils;
 import com.minws.wish.frame.util.Identities;
 import com.minws.wish.frame.util.ProsMap;
