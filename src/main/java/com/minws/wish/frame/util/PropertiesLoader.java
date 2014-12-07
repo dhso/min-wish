@@ -7,8 +7,10 @@ import java.util.NoSuchElementException;
 import java.util.Properties;
 
 import org.apache.commons.io.IOUtils;
-import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.jfinal.log.Logger;
+import com.minws.wish.frame.sdk.qiniu.QiniuConfig;
 
 /**
  * Properties文件载入工具类. 可载入多个properties文件,
@@ -16,7 +18,7 @@ import org.slf4j.LoggerFactory;
  */
 public class PropertiesLoader {
 
-	private static Logger logger = LoggerFactory.getLogger(PropertiesLoader.class);
+	private static final Logger logger = Logger.getLogger(PropertiesLoader.class);
 
 	private final Properties properties;
 
@@ -122,7 +124,7 @@ public class PropertiesLoader {
 		Properties props = new Properties();
 
 		for (String location : resourcesPaths) {
-			logger.debug("Loading properties file from path:{}", location);
+			logger.debug("Loading properties file from path:" + location);
 			InputStream is = null;
 			InputStreamReader isr = null;
 			try {
@@ -133,7 +135,7 @@ public class PropertiesLoader {
 				isr = new InputStreamReader(is, ProsMap.ENCODING);
 				props.load(isr);
 			} catch (IOException ex) {
-				logger.info("Could not load properties from path:{}, {} ", location, ex.getMessage());
+				logger.info("Could not load properties from path:" + location);
 			} finally {
 				IOUtils.closeQuietly(isr);
 				IOUtils.closeQuietly(is);

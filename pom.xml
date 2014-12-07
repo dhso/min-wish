@@ -19,14 +19,14 @@
 				<activeByDefault>true</activeByDefault>
 			</activation>
 			<properties>
-			    <log4j.rootLogger>INFO,stdout</log4j.rootLogger>
+			    <log4j.rootLogger>WARN, stdout, file</log4j.rootLogger>
 				<config.name>wish.config.properties</config.name>
 			</properties>
 		</profile>
 		<profile>
 			<id>ace</id>
 			<properties>
-			    <log4j.rootLogger>INFO,aceAppender,stdout</log4j.rootLogger>
+			    <log4j.rootLogger>WARN, stdout, file, aceAppender</log4j.rootLogger>
 				<config.name>wish.config.properties</config.name>
 			</properties>
 		</profile>
@@ -60,6 +60,11 @@
 			<groupId>com.jfinal</groupId>
 			<artifactId>jfinal</artifactId>
 			<version>1.9</version>
+		</dependency>
+		<dependency>
+		    <groupId>com.jfinal</groupId>
+		    <artifactId>cos</artifactId>
+		    <version>26Dec2008</version>
 		</dependency>
 		<!-- jackson -->
 		<dependency>
@@ -104,23 +109,18 @@
 			<artifactId>httpclient</artifactId>
 			<version>4.3.6</version>
 		</dependency>
-		<!-- slf4j -->
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
-			<version>1.7.7</version>
-		</dependency>
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-log4j12</artifactId>
-			<version>1.7.7</version>
-		</dependency>
 		<!-- ace libs -->
 		<dependency>
 			<groupId>com.alibaba.appengine</groupId>
 			<artifactId>services-api</artifactId>
 			<version>1.4.24</version>
 			<scope>provided</scope>
+		</dependency>
+		<!-- qiniu -->
+		<dependency>
+		    <groupId>com.qiniu</groupId>
+		    <artifactId>sdk</artifactId>
+		    <version>6.1.7</version>
 		</dependency>
 	</dependencies>
 

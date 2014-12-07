@@ -19,5 +19,9 @@
 </head>
 <body>
 	这是首页
+	<form enctype="multipart/form-data" action="<%=basePath%>/upload/" method="post">
+	<input type="file" name="file" value="上传">
+	<input type="submit" value="提交">
+	</form>
 </body>
 </html>
