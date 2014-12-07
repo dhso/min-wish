@@ -27,7 +27,7 @@ public class ProsMap {
 
 	static {
 		if (propertiesLoader == null) {
-			propertiesLoader = new PropertiesLoader("wish_config.properties");
+			propertiesLoader = new PropertiesLoader("wish.config.properties");
 		}
 	}
 
