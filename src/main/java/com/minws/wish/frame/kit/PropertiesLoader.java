@@ -1,4 +1,4 @@
-package com.minws.wish.frame.util;
+package com.minws.wish.frame.kit;
 
 import java.io.IOException;
 import java.io.InputStream;

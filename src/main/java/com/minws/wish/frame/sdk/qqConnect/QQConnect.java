@@ -10,8 +10,8 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.minws.wish.frame.util.AceUtils;
-import com.minws.wish.frame.util.StringUtils;
+import com.minws.wish.frame.kit.StringUtils;
+import com.minws.wish.frame.sdk.ace.AceKit;
 
 public class QQConnect {
 
@@ -26,7 +26,7 @@ public class QQConnect {
 	 */
 	public static QQToken getToken(String appId, String appKey, String code, String redirectUrl) {
 		String accessTokenUrl = "https://graph.qq.com/oauth2.0/token?grant_type=authorization_code&client_id=" + appId + "&client_secret=" + appKey + "&code=" + code + "&redirect_uri=" + redirectUrl;
-		String AccessTokenRes = AceUtils.httpGet(accessTokenUrl);
+		String AccessTokenRes = AceKit.httpGet(accessTokenUrl);
 		String accessToken = "";
 		Integer expiresIn = -1;
 		if (StringUtils.isNotBlank(AccessTokenRes)) {
@@ -52,7 +52,7 @@ public class QQConnect {
 		String clientId = "";
 		if (StringUtils.isNotBlank(accessToken)) {
 			String openIdUrl = "https://graph.qq.com/oauth2.0/me?access_token=" + accessToken;
-			String openIdRes = AceUtils.httpGet(openIdUrl);
+			String openIdRes = AceKit.httpGet(openIdUrl);
 			if (StringUtils.isNotBlank(openIdRes)) {
 				openIdRes = StringUtils.replace(openIdRes, "callback(", "");
 				openIdRes = StringUtils.replace(openIdRes, ");", "");
@@ -79,7 +79,7 @@ public class QQConnect {
 		String userInfoRes = "";
 		if (StringUtils.isNotBlank(openId) && StringUtils.isNotBlank(clientId)) {
 			String userInfoUrl = "https://graph.qq.com/user/get_user_info?access_token=" + accessToken + "&oauth_consumer_key=" + clientId + "&openid=" + openId;
-			userInfoRes = AceUtils.httpGet(userInfoUrl);
+			userInfoRes = AceKit.httpGet(userInfoUrl);
 		}
 		return userInfoRes;
 	}

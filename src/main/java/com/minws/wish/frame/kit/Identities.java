@@ -1,4 +1,4 @@
-package com.minws.wish.frame.util;
+package com.minws.wish.frame.kit;
 
 import java.security.SecureRandom;
 import java.util.UUID;

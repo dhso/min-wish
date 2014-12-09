@@ -9,7 +9,7 @@ import com.jfinal.config.Routes;
 import com.jfinal.core.JFinal;
 import com.jfinal.render.ViewType;
 import com.minws.wish.auth.AuthController;
-import com.minws.wish.frame.util.ProsMap;
+import com.minws.wish.frame.kit.ProsMap;
 import com.minws.wish.page.PageController;
 
 /**

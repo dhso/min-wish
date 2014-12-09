@@ -17,21 +17,21 @@ import org.apache.http.client.ClientProtocolException;
 
 import com.jfinal.aop.Before;
 import com.jfinal.core.Controller;
+import com.minws.wish.frame.kit.Identities;
+import com.minws.wish.frame.kit.ProsMap;
+import com.minws.wish.frame.kit.StringUtils;
+import com.minws.wish.frame.sdk.ace.AceKit;
 import com.minws.wish.frame.sdk.qqConnect.QQConnect;
 import com.minws.wish.frame.sdk.qqConnect.QQMe;
 import com.minws.wish.frame.sdk.qqConnect.QQToken;
 import com.minws.wish.frame.sdk.qqConnect.QQUserInfo;
-import com.minws.wish.frame.util.AceUtils;
-import com.minws.wish.frame.util.Identities;
-import com.minws.wish.frame.util.ProsMap;
-import com.minws.wish.frame.util.StringUtils;
 
 public class AuthController extends Controller {
 
 	@Before(LoginInterceptor.class)
 	public void index() {
 		String sso_access_token = getCookie("sso_access_token", "");
-		Serializable ser = AceUtils.cacheGet(sso_access_token);
+		Serializable ser = AceKit.cacheGet(sso_access_token);
 		QQUserInfo qquerInfo = (null != ser) ? (QQUserInfo) ser : null;
 		setAttr("qquerInfo", qquerInfo);
 		render("index.jsp");
@@ -46,7 +46,7 @@ public class AuthController extends Controller {
 		setAttr("sso_qstr", "?" + key);
 		setCookie("sso_state", key, 365 * 24 * 60 * 60, "/", ProsMap.getStrPro("sso.cookie.domain"));
 		// 缓存key->URL一天
-		AceUtils.cachePut(key, qstr, 60 * 60 * 24);
+		AceKit.cachePut(key, qstr, 60 * 60 * 24);
 		render("login.jsp");
 		return;
 	}
@@ -82,7 +82,7 @@ public class AuthController extends Controller {
 					QQUserInfo qqUserInfo = QQConnect.convertUserInfoStr2UserInfo(qqUserInfoStr);
 					if (null != qqUserInfo && qqUserInfo.getRet() == 0) {
 						// 缓存用户信息
-						AceUtils.cachePut(accessToken, qqUserInfoStr, expiresIn);
+						AceKit.cachePut(accessToken, qqUserInfoStr, expiresIn);
 						setCookie("sso_nickName", URLEncoder.encode(qqUserInfo.getNickname(), "utf-8"), expiresIn, "/", ProsMap.getStrPro("sso.cookie.domain"));
 					}
 				}
@@ -93,7 +93,7 @@ public class AuthController extends Controller {
 
 		String urlKey = getRequest().getQueryString().replaceAll("&code=" + code, "").replaceAll("/?code=" + code, "").replaceAll("&state=" + state, "").replaceAll("/?state=" + state, "");
 		if (StringUtils.isNotBlank(urlKey)) {
-			Serializable urlValue = AceUtils.cacheGet(urlKey);
+			Serializable urlValue = AceKit.cacheGet(urlKey);
 			String gotoUrl = (null != urlValue) ? urlValue.toString().replace("goto=", "") : "";
 			if (StringUtils.isNotBlank(gotoUrl)) {
 				setAttr("gotoUrl", gotoUrl);

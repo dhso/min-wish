@@ -9,8 +9,8 @@ package com.minws.wish.page;
 
 import com.jfinal.core.Controller;
 import com.jfinal.upload.UploadFile;
+import com.minws.wish.frame.kit.ProsMap;
 import com.minws.wish.frame.sdk.qiniu.QiniuKit;
-import com.minws.wish.frame.util.ProsMap;
 
 public class PageController extends Controller {
 	public void index() {
