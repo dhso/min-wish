@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" import="com.minws.sso.auth.QQUserInfo" contentType="text/html; charset=UTF-8"%>
+<%@ page language="java" import="java.util.*" contentType="text/html; charset=UTF-8"%>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path;
@@ -12,12 +12,16 @@
 <head>
     <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>SSO - 单点登录</title>
-	<link rel="stylesheet" href="<%=basePath%>/static/css/client.css">
+	<title>后台</title>
+	<link rel="stylesheet" href="<%=basePath%>/static/css/page.css">
 	<script src="<%=basePath%>/static/js/jquery/jquery.2.0.1.min.js"></script>
 	<script src="<%=basePath%>/static/js/modernizr.custom.20819.js"></script>
 </head>
 <body>
-
+	这是首页
+	<form enctype="multipart/form-data" action="<%=basePath%>/upload/" method="post">
+	<input type="file" name="file" value="上传">
+	<input type="submit" value="提交">
+	</form>
 </body>
 </html>

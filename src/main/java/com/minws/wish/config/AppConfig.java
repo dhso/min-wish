@@ -11,6 +11,7 @@ import com.jfinal.render.ViewType;
 import com.minws.wish.auth.AuthController;
 import com.minws.wish.frame.kit.ProsMap;
 import com.minws.wish.page.PageController;
+import com.minws.wish.system.SystemController;
 
 /**
  * API引导式配置
@@ -30,7 +31,7 @@ public class AppConfig extends JFinalConfig {
 	 */
 	public void configRoute(Routes me) {
 		me.add("/", PageController.class, "/page");
-		me.add("/auth", AuthController.class, "/auth");
+		me.add("/system", SystemController.class, "/system");
 	}
 	
 	/**
