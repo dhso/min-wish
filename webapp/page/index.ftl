@@ -1,7 +1,7 @@
 <#assign head_title = "首页">
 <#include "/page/common/head.ftl" encoding="UTF-8">
 <!--Background Image-->
-<img src="images/bg.jpg" id="background"/>
+<img src="${baseUrl}/static/page/images/bg.jpg" id="background"/>
 <!--Background Image-->
 <!--WRAPPTER START-->
 <div class="wrapepr floral-bg">
@@ -13,19 +13,19 @@
         <div class="couple-name">
             <div class="couple-name-holder">
                 <div class="first-name resize">
-                	<h1>KELLYN</h1>
-                	<h2>Nickson</h2>
+                	<h2>董昊</h2>
+                	<h3>Sir.</h3>
                 </div>
-                <div class="joint"><span>&amp;</span></div>
+                <div class="joint"></div>
                 <div class="last-name resize">
-                    <h1>JHONY</h1>
-                    <h2>Richerd</h2>
+                    <h2>王佶</h2>
+                    <h3>Miss.</h3>
                 </div>
             </div>
         </div>
         <div class="inner">
         <div class="getting-merried">
-        	<p>We're Getting Married</p>
+        	<p>我们结婚啦</p>
         </div>
         </div>
       </div>
@@ -40,32 +40,10 @@
                 	<span class="border2"></span>
                 </span>
                 <ul id="nav">
-                    <li><a href="index-2.html">Home</a></li>
-                    <li><a href="guest-book.html">Guest Book</a></li>
-                    <li><a href="#">Gallery</a>
-                    	<ul>
-                        	<li><a href="gallery.html">2 Collumn Gallery</a>
-                            	<ul>
-                                    <li><a href="gallery.html">2 Collumn Gallery</a></li>
-                                    <li><a href="gallery3col.html">3 Collumn Gallery</a></li>
-                                    <li><a href="gallery4col.html">4 Collumn Gallery</a></li>
-
-                                </ul>
-                            </li>
-                            <li><a href="gallery3col.html">3 Collumn Gallery</a>
-                            	<ul>
-                                    <li><a href="gallery.html">2 Collumn Gallery</a></li>
-                                    <li><a href="gallery3col.html">3 Collumn Gallery</a></li>
-                                    <li><a href="gallery4col.html">4 Collumn Gallery</a></li>                                    
-                                </ul>
-                            </li>
-                            <li><a href="gallery4col.html">4 Collumn Gallery</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="story.html">Our Story</a></li>
-                    <li><a href="contact-us.html">Contact Us</a></li>
-                    <li><a href="rvps.html">RVPS</a></li>
+                    <li><a href="index-2.html">主页</a></li>
+                    <li><a href="guest-book.html">编年史</a></li>
+                    <li><a href="events.html">结婚照</a></li>
+                    <li><a href="story.html">祝福墙</a></li>
                 </ul>
             
                 <div class="left-side"><!--navigation left corner--></div>
@@ -89,21 +67,21 @@
                     <!--countdown timer end-->
                     </div>
                     <h4>25th MAY 2013,Couples Wedding Arena, Newyork</h4>
-                	<div class="left-bg visible-desktop visible-tablet"><img src="images/banner-controlbg1.png" alt=""></div>
-                    <div class="left-shadow"><img src="images/banner-corner-left.png" alt=""></div>
-                    <div class="right-shadow"><img src="images/banner-corner-right.png" alt=""></div>
+                	<div class="left-bg visible-desktop visible-tablet"><img src="${baseUrl}/static/page/images/banner-controlbg1.png" alt=""></div>
+                    <div class="left-shadow"><img src="${baseUrl}/static/page/images/banner-corner-left.png" alt=""></div>
+                    <div class="right-shadow"><img src="${baseUrl}/static/page/images/banner-corner-right.png" alt=""></div>
                     	<div id="myCarousel" class="carousel slide">
                         <!-- Carousel items -->
                         <div class="carousel-inner">
-                        <div class="active item"><img src="images/banner1.png" alt=""></div>
-                        <div class="item"><img src="images/banner2.png" alt=""></div>
-                        <div class="item"><img src="images/banner3.png" alt=""></div>
+                        <div class="active item"><img src="${baseUrl}/static/page/images/banner1.png" alt=""></div>
+                        <div class="item"><img src="${baseUrl}/static/page/images/banner2.png" alt=""></div>
+                        <div class="item"><img src="${baseUrl}/static/page/images/banner3.png" alt=""></div>
                         </div>
                         <!-- Carousel nav -->
-                        <a class="carousel-control left" href="#myCarousel" data-slide="prev"><img src="images/left.png" alt=""></a>
-                        <a class="carousel-control right" href="#myCarousel" data-slide="next"><img src="images/right.png" alt=""></a>
+                        <a class="carousel-control left" href="#myCarousel" data-slide="prev"><img src="${baseUrl}/static/page/images/left.png" alt=""></a>
+                        <a class="carousel-control right" href="#myCarousel" data-slide="next"><img src="${baseUrl}/static/page/images/right.png" alt=""></a>
                         </div>
-                    <div class="right-bg visible-desktop visible-tablet"><img src="images/banner-controlbg2.png" alt=""></div>
+                    <div class="right-bg visible-desktop visible-tablet"><img src="${baseUrl}/static/page/images/banner-controlbg2.png" alt=""></div>
                 </div>
                 <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >Website Template</a></div>
                 <!--banners end-->
@@ -111,7 +89,7 @@
                 <div class="place relative">
                 	<h2>The ceremony &amp; the party will both be held at <small>The Peninsula Hotel</small> in <small>Washington DC</small><br>Please book your hotel by April 1 to receive the group rate!</h2>
                 	<span class="dot-left"></span>
-                    <span class="flower"><img src="images/flower.png" alt=""></span>
+                    <span class="flower"><img src="${baseUrl}/static/page/images/flower.png" alt=""></span>
                     <span class="dot-right"></span>
                 </div>
                 <!--place end-->
@@ -121,17 +99,17 @@
                     <div class="love-heart"><a href="#myModal" rel="tooltip" data-original-title="Love Messege" role="button" data-toggle="modal"></a></div>
                 	<div class="love-box resize center-border relative">
                     	<div class="img-container">
-                        	<div class="avatar"><a href="#"><img src="images/avatar.png" alt=""></a></div>
+                        	<div class="avatar"><a href="#"><img src="${baseUrl}/static/page/images/avatar.png" alt=""></a></div>
                         </div>
                         <div class="clearfix"></div>
                         <h3>Jhony Shewry</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque augue erat, condimentum eget blandit vel, imperdiet vitae odio. Aliquam in nisl sit amet risus vel, imperdiet vitae odio. Aliquam in nisl sit amet .</p>
 						<div class="share">
                         	<ul>
-                            	<li><a href="#"><img src="images/fb.png" alt=""></a></li>
-                                <li><a href="#"><img src="images/flickr.png" alt=""></a></li>
-                                <li><a href="#"><img src="images/vimeo.png" alt=""></a></li>
-                                <li><a href="#"><img src="images/twitter.png" alt=""></a></li>
+                            	<li><a href="#"><img src="${baseUrl}/static/page/images/fb.png" alt=""></a></li>
+                                <li><a href="#"><img src="${baseUrl}/static/page/images/flickr.png" alt=""></a></li>
+                                <li><a href="#"><img src="${baseUrl}/static/page/images/vimeo.png" alt=""></a></li>
+                                <li><a href="#"><img src="${baseUrl}/static/page/images/twitter.png" alt=""></a></li>
                             </ul>
                             <div class="clearfix"></div>
                         </div>
@@ -140,7 +118,7 @@
                             <div class="message-header relative">
                             	<div class="header-leftside"></div>
                                 <div class="message-center2">
-                                	<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="images/close.png" alt=""></button>
+                                	<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="${baseUrl}/static/page/images/close.png" alt=""></button>
                                 </div>
                                 <div class="header-rightside"></div>
                             </div>
@@ -169,17 +147,17 @@
                     <!--right love box start-->
                 	<div class="love-box resize relative">
                     	<div class="img-container">
-                        	<div class="avatar"><a href="#"><img src="images/avatar2.png" alt=""></a></div>
+                        	<div class="avatar"><a href="#"><img src="${baseUrl}/static/page/images/avatar2.png" alt=""></a></div>
                         </div>
                         <div class="clearfix"></div>
                         <h3>Kellyn Duplantis</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque augue erat, condimentum eget blandit vel, imperdiet vitae odio. Aliquam in nisl sit amet risus vel, imperdiet vitae odio. Aliquam in nisl sit amet .</p>
 						<div class="share">
                         	<ul>
-                            	<li><a href="#"><img src="images/fb.png" alt=""></a></li>
-                                <li><a href="#"><img src="images/flickr.png" alt=""></a></li>
-                                <li><a href="#"><img src="images/vimeo.png" alt=""></a></li>
-                                <li><a href="#"><img src="images/twitter.png" alt=""></a></li>
+                            	<li><a href="#"><img src="${baseUrl}/static/page/images/fb.png" alt=""></a></li>
+                                <li><a href="#"><img src="${baseUrl}/static/page/images/flickr.png" alt=""></a></li>
+                                <li><a href="#"><img src="${baseUrl}/static/page/images/vimeo.png" alt=""></a></li>
+                                <li><a href="#"><img src="${baseUrl}/static/page/images/twitter.png" alt=""></a></li>
                             </ul>
                             <div class="clearfix"></div>
                         </div>
@@ -197,83 +175,48 @@
                         <div class="active item">
                         	<div class="gallery-holder pretty-photos">
                     	<ul>
-                        	<li><a href="images/banner3.png" rel="prettyPhoto[gallery1]"><img src="images/gallery-img.png" alt=""><div class="flower2"></div></a></li>
-                            <li><a href="images/banner3.png" rel="prettyPhoto[gallery1]"><img src="images/gallery-img2.png" alt=""><div class="flower2"></div></a></li>
-                            <li><a href="images/banner3.png" rel="prettyPhoto[gallery1]"><img src="images/gallery-img3.png" alt=""><div class="flower2"></div></a></li>
-                            <li><a href="images/banner3.png" rel="prettyPhoto[gallery1]"><img src="images/gallery-img4.png" alt=""><div class="flower2"></div></a></li>
-                            <li><a href="images/banner3.png" rel="prettyPhoto[gallery1]"><img src="images/gallery-img5.png" alt=""><div class="flower2"></div></a></li>
+                        	<li><a href="${baseUrl}/static/page/images/banner3.png" rel="prettyPhoto[gallery1]"><img src="${baseUrl}/static/page/images/gallery-img.png" alt=""><div class="flower2"></div></a></li>
+                            <li><a href="${baseUrl}/static/page/images/banner3.png" rel="prettyPhoto[gallery1]"><img src="${baseUrl}/static/page/images/gallery-img2.png" alt=""><div class="flower2"></div></a></li>
+                            <li><a href="${baseUrl}/static/page/images/banner3.png" rel="prettyPhoto[gallery1]"><img src="${baseUrl}/static/page/images/gallery-img3.png" alt=""><div class="flower2"></div></a></li>
+                            <li><a href="${baseUrl}/static/page/images/banner3.png" rel="prettyPhoto[gallery1]"><img src="${baseUrl}/static/page/images/gallery-img4.png" alt=""><div class="flower2"></div></a></li>
+                            <li><a href="${baseUrl}/static/page/images/banner3.png" rel="prettyPhoto[gallery1]"><img src="${baseUrl}/static/page/images/gallery-img5.png" alt=""><div class="flower2"></div></a></li>
                         </ul>
                     </div>
                         </div>
                         <div class="item">
                         	<div class="gallery-holder">
                                 <ul>
-                                    <li><a href="images/banner3.png" rel="prettyPhoto[gallery1]"><img src="images/gallery-img.png" alt=""><div class="flower2"></div></a></li>
-                                    <li><a href="images/banner3.png" rel="prettyPhoto[gallery1]"><img src="images/gallery-img2.png" alt=""><div class="flower2"></div></a></li>
-                                    <li><a href="images/banner3.png" rel="prettyPhoto[gallery1]"><img src="images/gallery-img3.png" alt=""><div class="flower2"></div></a></li>
-                                    <li><a href="images/banner3.png" rel="prettyPhoto[gallery1]"><img src="images/gallery-img4.png" alt=""><div class="flower2"></div></a></li>
-                                    <li><a href="images/banner3.png" rel="prettyPhoto[gallery1]"><img src="images/gallery-img5.png" alt=""><div class="flower2"></div></a></li>
+                                    <li><a href="${baseUrl}/static/page/images/banner3.png" rel="prettyPhoto[gallery1]"><img src="${baseUrl}/static/page/images/gallery-img.png" alt=""><div class="flower2"></div></a></li>
+                                    <li><a href="${baseUrl}/static/page/images/banner3.png" rel="prettyPhoto[gallery1]"><img src="${baseUrl}/static/page/images/gallery-img2.png" alt=""><div class="flower2"></div></a></li>
+                                    <li><a href="${baseUrl}/static/page/images/banner3.png" rel="prettyPhoto[gallery1]"><img src="${baseUrl}/static/page/images/gallery-img3.png" alt=""><div class="flower2"></div></a></li>
+                                    <li><a href="${baseUrl}/static/page/images/banner3.png" rel="prettyPhoto[gallery1]"><img src="${baseUrl}/static/page/images/gallery-img4.png" alt=""><div class="flower2"></div></a></li>
+                                    <li><a href="${baseUrl}/static/page/images/banner3.png" rel="prettyPhoto[gallery1]"><img src="${baseUrl}/static/page/images/gallery-img5.png" alt=""><div class="flower2"></div></a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="item">
                         	<div class="gallery-holder">
                                 <ul>
-                                    <li><a href="images/banner3.png" rel="prettyPhoto[gallery1]"><img src="images/gallery-img.png" alt=""><div class="flower2"></div></a></li>
-                                    <li><a href="images/banner3.png" rel="prettyPhoto[gallery1]"><img src="images/gallery-img2.png" alt=""><div class="flower2"></div></a></li>
-                                    <li><a href="images/banner3.png" rel="prettyPhoto[gallery1]"><img src="images/gallery-img3.png" alt=""><div class="flower2"></div></a></li>
-                                    <li><a href="images/banner3.png" rel="prettyPhoto[gallery1]"><img src="images/gallery-img4.png" alt=""><div class="flower2"></div></a></li>
-                                    <li><a href="images/banner3.png" rel="prettyPhoto[gallery1]"><img src="images/gallery-img5.png" alt=""><div class="flower2"></div></a></li>
+                                    <li><a href="${baseUrl}/static/page/images/banner3.png" rel="prettyPhoto[gallery1]"><img src="${baseUrl}/static/page/images/gallery-img.png" alt=""><div class="flower2"></div></a></li>
+                                    <li><a href="${baseUrl}/static/page/images/banner3.png" rel="prettyPhoto[gallery1]"><img src="${baseUrl}/static/page/images/gallery-img2.png" alt=""><div class="flower2"></div></a></li>
+                                    <li><a href="${baseUrl}/static/page/images/banner3.png" rel="prettyPhoto[gallery1]"><img src="${baseUrl}/static/page/images/gallery-img3.png" alt=""><div class="flower2"></div></a></li>
+                                    <li><a href="${baseUrl}/static/page/images/banner3.png" rel="prettyPhoto[gallery1]"><img src="${baseUrl}/static/page/images/gallery-img4.png" alt=""><div class="flower2"></div></a></li>
+                                    <li><a href="${baseUrl}/static/page/images/banner3.png" rel="prettyPhoto[gallery1]"><img src="${baseUrl}/static/page/images/gallery-img5.png" alt=""><div class="flower2"></div></a></li>
                                 </ul>
                             </div>
                         </div>
                         </div>
                         <!-- Carousel nav -->
-                        <a class="carousel-control left" href="#myCarousel2" data-slide="prev"><img src="images/left2.png" alt=""></a>
-                        <a class="carousel-control right" href="#myCarousel2" data-slide="next"><img src="images/right2.png" alt=""></a>
+                        <a class="carousel-control left" href="#myCarousel2" data-slide="prev"><img src="${baseUrl}/static/page/images/left2.png" alt=""></a>
+                        <a class="carousel-control right" href="#myCarousel2" data-slide="next"><img src="${baseUrl}/static/page/images/right2.png" alt=""></a>
                         </div>
                     
                     
                     <span class="dot-left"></span>
                     <span class="dot-right"></span>
-                    <div class="flower"><img src="images/flower2.png" alt=""></div>
+                    <div class="flower"><img src="${baseUrl}/static/page/images/flower2.png" alt=""></div>
                 </div>
                 <!--Gallery end-->
-                <!--Get In Touch Start-->
-                <div class="get-in-touch">
-                	<!--Contact Info start-->
-                	<div class="info resize">
-                    	<h3>Get in touch with us</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adi piscing elit. Pellentesque augue erat, condim entum eget blt, consectetur adi piscing elit. Pellentesquandit vel, imperdiet vitae odio. Aliquam in nisl sit amet risus vel,</p>
-                    	<a href="#">Use this form for any Question >></a>
-                    </div>
-                    <!--Contact Info end-->
-                    <!--Form start-->
-                    <div class="form">
-                    	<form>
-                        	<div class="text-inputs">
-                            	<input name="" type="text" value="Name *" onBlur="if(this.value == '') { this.value = 'Name *'; }" onFocus="if(this.value == 'Name *') { this.value = ''; }">
-                                <input name="" type="text" value="Number *" onBlur="if(this.value == '') { this.value = 'Number *'; }" onFocus="if(this.value == 'Number *') { this.value = ''; }">
-                                <input name="" type="text" value="Email *" onBlur="if(this.value == '') { this.value = 'Email *'; }" onFocus="if(this.value == 'Email *') { this.value = ''; }">
-                            </div>
-                            <div class="text-inputs2">
-                            	<textarea name=""></textarea>
-                                <button>Submit your Messege</button>
-                            </div>
-                        </form>
-                    </div>
-                    <!--Form End-->
-                </div>
-                <!--Get In Touch end-->
-                <div class="register">
-                    	<h4>We are register at:</h4>
-                        <ul>
-                        	<li><a href="#"><img src="images/amazon.png" alt=""></a></li>
-                            <li><a href="#"><img src="images/ebay.png" alt=""></a></li>
-                            <li><a href="#"><img src="images/crown.png" alt=""></a></li>
-                            <li><a href="#"><img src="images/bedbath.png" alt=""></a></li>
-                        </ul>
-                    </div>
                 <div class="clearfix"></div>
             </div>
             <!--content end-->
@@ -284,12 +227,12 @@
         <div class="followus resize">
             <p>Premium Wordpress Theme by Famous Themes, Photos by antondemin.ru - More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a></p>
                 <ul>
-                    <li><a href="#" rel="tooltip" data-original-title="Facebook"><img src="images/fb.png" alt=""></a></li>
-                    <li><a href="#" rel="tooltip" data-original-title="Flickr"><img src="images/flickr.png" alt=""></a></li>
-                    <li><a href="#" rel="tooltip" data-original-title="Vimeo"><img src="images/vimeo.png" alt=""></a></li>
-                    <li><a href="#" rel="tooltip" data-original-title="Twitter"><img src="images/twitter.png" alt=""></a></li>
-                    <li><a href="#" rel="tooltip" data-original-title="Google Plus"><img src="images/g%2b.png" alt=""></a></li>
-                    <li><a href="#" rel="tooltip" data-original-title="Skype"><img src="images/skype.png" alt=""></a></li>
+                    <li><a href="#" rel="tooltip" data-original-title="Facebook"><img src="${baseUrl}/static/page/images/fb.png" alt=""></a></li>
+                    <li><a href="#" rel="tooltip" data-original-title="Flickr"><img src="${baseUrl}/static/page/images/flickr.png" alt=""></a></li>
+                    <li><a href="#" rel="tooltip" data-original-title="Vimeo"><img src="${baseUrl}/static/page/images/vimeo.png" alt=""></a></li>
+                    <li><a href="#" rel="tooltip" data-original-title="Twitter"><img src="${baseUrl}/static/page/images/twitter.png" alt=""></a></li>
+                    <li><a href="#" rel="tooltip" data-original-title="Google Plus"><img src="${baseUrl}/static/page/images/g%2b.png" alt=""></a></li>
+                    <li><a href="#" rel="tooltip" data-original-title="Skype"><img src="${baseUrl}/static/page/images/skype.png" alt=""></a></li>
                 </ul>
             <div class="clearfix"></div>
         </div>
@@ -299,4 +242,4 @@
     </div>
     <div class="clearfix"></div>
 </div>
-<#include "/system/common/foot.ftl" encoding="UTF-8">
+<#include "/page/common/foot.ftl" encoding="UTF-8">

@@ -7,7 +7,7 @@ package com.minws.wish.frame.sdk.qiniu;
 import org.json.JSONException;
 
 import com.jfinal.log.Logger;
-import com.minws.wish.frame.kit.ProsMap;
+import com.minws.wish.frame.kit.properties.ProsMap;
 import com.qiniu.api.auth.AuthException;
 import com.qiniu.api.auth.digest.Mac;
 import com.qiniu.api.rs.PutPolicy;

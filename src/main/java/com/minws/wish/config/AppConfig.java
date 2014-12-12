@@ -9,7 +9,7 @@ import com.jfinal.config.Routes;
 import com.jfinal.core.JFinal;
 import com.jfinal.ext.handler.ContextPathHandler;
 import com.jfinal.ext.handler.UrlSkipHandler;
-import com.minws.wish.frame.kit.ProsMap;
+import com.minws.wish.frame.kit.properties.ProsMap;
 import com.minws.wish.page.PageController;
 import com.minws.wish.system.SystemController;
 

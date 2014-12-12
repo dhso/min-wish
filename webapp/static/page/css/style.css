@@ -6,14 +6,12 @@
  width:100%;
 }
 
-
 *{
 	padding:0px;
 	margin:0px;
 	outline:none;
 }
 body{
-	background-image:url(../images/b2g.jpg);
 	background-repeat:no-repeat;
 	background-position:top center;
 	background-attachment:fixed;
@@ -87,13 +85,11 @@ h5{
 	width:100%;
 }
 .header-line{
-	background-image:url(../images/header-line.png);
-	height:21px;
+	height:18px;
 	border-bottom:solid 1px #fff;
 	-moz-box-shadow:    0px 0px 14px -6px #000;
 	-webkit-box-shadow: 0px 0px 14px -6px #000;
 	box-shadow:         0px 0px 14px -6px #000;
-	background-color:#97d0c9;
 }
 .couple-name{
 	float:left;
@@ -101,17 +97,17 @@ h5{
 	display:table;
 	margin:50px 0px 0px 0px;
 }
-.couple-name h1{
-	font-size:70px;
+.couple-name h2{
+	font-size:40px;
 	text-shadow:2px 2px 0px 0px #000;
 	margin:0px;
 	padding:0px;
-	line-height:70px !important;
+	line-height:40px !important;
 	text-shadow: 2px 2px 0px #fff, 4px 4px 0px #cccccc ;
 }
-.couple-name h2{
+.couple-name h3{
 	font-weight:normal;
-	font-size:34px;
+	font-size:30px;
 	text-transform:uppercase;
 	text-shadow:2px 2px 0px #f6f5ec ;
 	color:#6f6f6f;
@@ -137,24 +133,10 @@ h5{
 	display:table-cell;
 	float:left;
 	width:96px;
-	background-image:url(../images/dots.png);
+	height:50px;
+	background-image:url(../images/heart.png);
 	background-repeat:no-repeat;
 	background-position:center center;
-}
-.joint span{
-	-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
-	border-radius: 100px;
-	font-size:45px;
-	padding:25px 20px;
-	font-family: 'Oswald', sans-serif;
-	float:left;
-	margin:5px 0px 15px 3px;
-	background-color:#8f8f8f;
-	border:10px solid rgba(255, 255, 255, 0.50);
-	background-clip: padding-box;
-	font-weight:500;
-	color:#ffffff;
 }
 
 .getting-merried{

@@ -5,7 +5,7 @@
 <!-- BEGIN HEAD -->
 <head>
     <meta charset="utf-8">
-	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>${head_title}</title>
 	<#include "/page/common/css.ftl" encoding="UTF-8">
 </head>

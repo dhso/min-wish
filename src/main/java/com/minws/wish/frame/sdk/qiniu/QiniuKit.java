@@ -35,7 +35,7 @@ public class QiniuKit {
 	}
 
 	public static List<ListItem> list(String bucketName, int count) {
-		return list(bucketName, "*", count);
+		return list(bucketName, "", count);
 	}
 
 	public static List<ListItem> list(String bucketName, String directoryPath) {
@@ -44,7 +44,7 @@ public class QiniuKit {
 
 	public static List<ListItem> list(String bucketName, String directoryPath, int count) {
 		if (directoryPath == null) {
-			directoryPath = "*";
+			directoryPath = "";
 		}
 		if (count == 0) {
 			count = Integer.MAX_VALUE;

@@ -6,9 +6,6 @@ $("[rel=tooltip]").tooltip();
 });
 //tooltip
 
-
-
-
 $(function(){
  
  var note = $('#note'),
