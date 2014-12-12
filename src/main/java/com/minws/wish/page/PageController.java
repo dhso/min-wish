@@ -15,7 +15,7 @@ import com.minws.wish.frame.sdk.qiniu.QiniuKit;
 public class PageController extends Controller {
 	public void index() {
 		
-		render("index.jsp");
+		render("index.ftl");
 		return;
 	}
 	

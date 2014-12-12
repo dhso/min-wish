@@ -12,7 +12,7 @@ import com.jfinal.core.Controller;
 public class SystemController extends Controller{
 	public void index() {
 		
-		render("index.jsp");
+		render("index.ftl");
 		return;
 	}
 	
