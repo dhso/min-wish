@@ -2,6 +2,9 @@ package com.minws.wish.frame.kit;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.Authenticator;
+import java.net.PasswordAuthentication;
+import java.util.Properties;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -79,5 +82,32 @@ public class HttpUtils extends org.apache.commons.lang3.StringUtils {
 			}
 		}
 		return tClass;
+	}
+
+	public static void proxy() {
+		Properties prop = System.getProperties();
+		prop.put("http.proxySet", "true");
+		prop.setProperty("http.proxyHost", "proxy.ace.aliyun.com");
+		prop.setProperty("http.proxyPort", "3128");
+		prop.setProperty("https.proxyHost", "proxy.ace.aliyun.com");
+		prop.setProperty("https.proxyPort", "3128");
+		//prop.setProperty("socksProxyHost", "proxy.ace.aliyun.com");
+        //prop.setProperty("socksProxyPort", "3128");
+		Authenticator.setDefault(new MyAuthenticator("1194709104218733_default_-6", "rb6e475twf"));
+		System.out.println("====proxy=======");
+	}
+
+	static class MyAuthenticator extends Authenticator {
+		private String user = "";
+		private String password = "";
+
+		public MyAuthenticator(String user, String password) {
+			this.user = user;
+			this.password = password;
+		}
+
+		protected PasswordAuthentication getPasswordAuthentication() {
+			return new PasswordAuthentication(user, password.toCharArray());
+		}
 	}
 }

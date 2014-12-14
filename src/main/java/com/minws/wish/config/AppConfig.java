@@ -9,6 +9,7 @@ import com.jfinal.config.Routes;
 import com.jfinal.core.JFinal;
 import com.jfinal.ext.handler.ContextPathHandler;
 import com.jfinal.ext.handler.UrlSkipHandler;
+import com.minws.wish.frame.kit.HttpUtils;
 import com.minws.wish.frame.kit.properties.ProsMap;
 import com.minws.wish.page.PageController;
 import com.minws.wish.system.SystemController;
@@ -63,4 +64,10 @@ public class AppConfig extends JFinalConfig {
 	public static void main(String[] args) {
 		JFinal.start("webapp", 80, "/", 5);
 	}
+	
+	@Override
+	public void afterJFinalStart(){
+		HttpUtils.proxy();
+	}
+	
 }
