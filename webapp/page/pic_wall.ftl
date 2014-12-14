@@ -14,15 +14,14 @@
             <div class="clearfix"></div>
             <!--content start-->
             <div class="innter padding40px content-borders">
-            <#include "/page/common/love_banner.ftl" encoding="UTF-8">
-             <#include "/page/common/love_gallery.ftl" encoding="UTF-8">
-                 <#include "/page/common/love_title.ftl" encoding="UTF-8">
-                <#include "/page/common/love_message.ftl" encoding="UTF-8">
-                
-            	
-                
-
                 <div class="clearfix"></div>
+                <div class="pretty-photos">
+				    <#list picList as keyUrl>
+						     <a href="http://7sbmku.com2.z0.glb.qiniucdn.com/${keyUrl}?imageView2/2/h/600/q/80" rel="prettyPhoto[wedding]">
+					        	<img src="http://7sbmku.com2.z0.glb.qiniucdn.com/${keyUrl}?imageView2/1/w/100/q/36" width="100" height="100" alt="我们的结婚照" style="padding:5px;"/>
+					        </a>
+				    </#list>
+				   </div>
             </div>
             <!--content end-->
         </div>
@@ -47,4 +46,5 @@
     </div>
     <div class="clearfix"></div>
 </div>
+<#include "/page/common/love_send_wish.ftl" encoding="UTF-8">
 <#include "/page/common/foot.ftl" encoding="UTF-8">

@@ -15,6 +15,7 @@ body{
 	background-repeat:no-repeat;
 	background-position:top center;
 	background-attachment:fixed;
+	font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
 }
 .wrapepr{
 	width:100%;
@@ -39,7 +40,6 @@ body{
 ========================================================
 */
 h1, h2, h3, h4, h5, h6{
-	font-family: 'Oswald', sans-serif;
 	line-height:normal !important;
 	font-weight:normal;
 }
@@ -97,7 +97,7 @@ h5{
 	display:table;
 	margin:50px 0px 0px 0px;
 }
-.couple-name h2{
+.couple-name span{
 	font-size:40px;
 	text-shadow:2px 2px 0px 0px #000;
 	margin:0px;
@@ -105,9 +105,9 @@ h5{
 	line-height:40px !important;
 	text-shadow: 2px 2px 0px #fff, 4px 4px 0px #cccccc ;
 }
-.couple-name h3{
+.couple-name span.small{
 	font-weight:normal;
-	font-size:30px;
+	font-size:20px;
 	text-transform:uppercase;
 	text-shadow:2px 2px 0px #f6f5ec ;
 	color:#6f6f6f;
@@ -251,7 +251,6 @@ h5{
 .navigation ul li a{
 	display:block;
 	font-weight:500;
-	font-family: 'Oswald', sans-serif;
 	font-size:18px;
 	text-transform:uppercase;
 	padding:19px 20px 18px 20px;
@@ -405,7 +404,6 @@ h5{
 	border-radius: 5px;
 	position:absolute;
 	font-size:16px;
-	font-family: 'Oswald', sans-serif;
 	font-weight:500;
 	padding:10px 30px;
 	background-color:#acd9d4;
@@ -521,7 +519,7 @@ h5{
 	width:100%;
 	text-align:center;
 	border-bottom:solid 1 #dfdfdf;
-	padding:50px 0px 50px 0px;
+	padding:0px 0px 50px 0px;
 	margin:0px 0px 15px 0px;
 	
 }
@@ -876,7 +874,6 @@ form{
 .form input[type="text"], .form textarea{
 	width:214px;
 	border-radius:0px;
-	font-family: 'Oswald', sans-serif;
 	font-size:12px;
 	color:#9b9b9b;
 	padding:11px 10px;
@@ -893,7 +890,6 @@ form{
 .form button{
 	border:none;
 	border-radius:0px;
-	font-family: 'Oswald', sans-serif;
 	width:262px;
 	height:44px;
 	background-color:#97d0c9;
@@ -1015,7 +1011,6 @@ form{
 }
 .tweets p{
 	font-size:18px;
-	font-family:Georgia, "Times New Roman", Times, serif;
 }
 .copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
 /*
@@ -1139,7 +1134,6 @@ form{
 }
 
 .message-board h5{
-	font-family: 'Lato', sans-serif;
 }
 .message-board ul{
 	float:left;
@@ -1289,7 +1283,6 @@ form{
 	-moz-transition: all 0.4s ease-in-out;
 	-o-transition: all 0.4s ease-in-out;
 	-webkit-transition: all 0.4s ease-in-out;
-	font-family: 'Oswald', sans-serif;
 	color:#FFF;
 	font-weight:500;
 }
@@ -1385,7 +1378,6 @@ form{
 .anchor-style1{
 	float:left;
 	margin:2px 10px 0 0;
-	font-family:'Lato',sans-serif;
 	font-weight:bold;
 	font-size:14px;
 }
@@ -1403,7 +1395,6 @@ form{
 .guest-book input[type="text"], .guest-book textarea{
 	width:416px;
 	border-radius:0px;
-	font-family: 'Oswald', sans-serif;
 	font-size:12px;
 	color:#9b9b9b;
 	padding:7px 10px;
@@ -1417,7 +1408,6 @@ form{
 	width:438px;
 	height:35px;
 	border-radius:0px;
-	font-family: 'Oswald', sans-serif;
 	font-size:12px;
 	color:#9b9b9b;
 	padding:7px 10px;
@@ -1444,7 +1434,6 @@ form{
 	font-size:14px;
 	font-weight:500px;
 	margin:6px 10px 0px 0px;
-	font-family: 'Oswald', sans-serif;
 }
 /*
 ========================================================
@@ -1472,7 +1461,6 @@ form{
 	margin:0px 0px 15px 0px
 }
 .select span h5{
-	font-family:'Lato',sans-serif;
 	float:left;
 }
 .select span small{
@@ -1542,7 +1530,6 @@ form{
 	float:left;
 }
 .gallery-pagination ul li a{
-	font-family: 'Oswald', sans-serif;
 	font-size:16px;
 	text-transform:uppercase;
 	border:none;
@@ -1649,7 +1636,6 @@ form{
 	width:475px;
 	border:solid 1px #dfdfdf;
 	border-radius:0px;
-	font-family: 'Oswald', sans-serif;
 	font-size:12px;
 	color:#9b9b9b;
 	padding:11px 10px;
@@ -1725,7 +1711,6 @@ form{
 	background-position:0px 45px;
 }
 .followus p{
-	font-family: 'Oswald', sans-serif;
 	font-size:12px;
 	padding:0px 0px 0px 25px;
 	background-image:url(../images/heart.png);
@@ -1875,6 +1860,19 @@ form{
 	background-image:url(../images/footer-border.png);
 	background-repeat:repeat-x;
 	background-position:0px 10px;
+	
+}
+
+#sendWishModal .qqLogin{
+	border: 1px;
+	width: 38px;
+	height: 38px;
+	border-style: dotted;
+	border-radius: 20px;
+	background:url(../images/Connect_logo_1.png) center no-repeat;
+	vertical-align: bottom;
+	display: inline-block;
+	cursor: pointer;
 	
 }
 

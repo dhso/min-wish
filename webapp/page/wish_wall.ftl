@@ -14,15 +14,9 @@
             <div class="clearfix"></div>
             <!--content start-->
             <div class="innter padding40px content-borders">
-            <#include "/page/common/love_banner.ftl" encoding="UTF-8">
-             <#include "/page/common/love_gallery.ftl" encoding="UTF-8">
-                 <#include "/page/common/love_title.ftl" encoding="UTF-8">
-                <#include "/page/common/love_message.ftl" encoding="UTF-8">
-                
-            	
-                
-
+                 <#include "/page/common/love_wish_title.ftl" encoding="UTF-8">
                 <div class="clearfix"></div>
+                <button class="btn" type="button" data-toggle="modal" data-target="#sendWishModal"><i class="icon-heart"></i>&nbsp;送祝福</button>
             </div>
             <!--content end-->
         </div>
@@ -47,4 +41,5 @@
     </div>
     <div class="clearfix"></div>
 </div>
+<#include "/page/common/love_send_wish.ftl" encoding="UTF-8">
 <#include "/page/common/foot.ftl" encoding="UTF-8">
