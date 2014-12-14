@@ -11,19 +11,14 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
 
 import org.apache.http.client.ClientProtocolException;
-import org.eclipse.jetty.http.HttpURI;
 
-import com.alibaba.appengine.api.fetchurl.FetchUrlService;
-import com.alibaba.appengine.api.fetchurl.FetchUrlServiceFactory;
 import com.jfinal.core.Controller;
 import com.jfinal.upload.UploadFile;
 import com.minws.wish.frame.kit.HttpUtils;
 import com.minws.wish.frame.kit.StringUtils;
 import com.minws.wish.frame.kit.properties.ProsMap;
-import com.minws.wish.frame.sdk.ace.AceKit;
 import com.minws.wish.frame.sdk.qiniu.QiniuKit;
 import com.qiniu.api.rsf.ListItem;
 
@@ -46,7 +41,6 @@ public class PageController extends Controller {
 		return;
 	}
 	
-	@SuppressWarnings("unused")
 	public void picWall(){
 		List<ListItem> list = QiniuKit.list(ProsMap.getStrPro("wish.qiniu.bucket"),"wedding");
 		List<String> picList = new ArrayList<String>();
