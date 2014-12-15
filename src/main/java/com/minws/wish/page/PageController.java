@@ -15,14 +15,18 @@ import java.util.List;
 import org.apache.http.client.ClientProtocolException;
 
 import com.jfinal.core.Controller;
+import com.jfinal.log.Logger;
 import com.jfinal.upload.UploadFile;
 import com.minws.wish.frame.kit.HttpUtils;
 import com.minws.wish.frame.kit.StringUtils;
+import com.minws.wish.frame.kit.properties.PropertiesLoader;
 import com.minws.wish.frame.kit.properties.ProsMap;
 import com.minws.wish.frame.sdk.qiniu.QiniuKit;
 import com.qiniu.api.rsf.ListItem;
 
 public class PageController extends Controller {
+	private static final Logger logger = Logger.getLogger(PageController.class);
+	
 	public void index() {
 		//List list = QiniuKit.list(ProsMap.getStrPro("wish.qiniu.bucket"));
 		
@@ -48,6 +52,7 @@ public class PageController extends Controller {
 		while (itr.hasNext()) {
 		    picList.add(itr.next().key);
 		}
+		logger.debug("qiniu");
 		setAttr("picList", picList);
 		render("pic_wall.ftl");
 		return;
@@ -62,6 +67,7 @@ public class PageController extends Controller {
 			//getRes = AceKit.httpGet(url);
 			getRes = HttpUtils.httpGet(url);
 		}
+		logger.debug(getRes);
 		renderJson(getRes);
 		return;
 	}

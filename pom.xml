@@ -19,14 +19,14 @@
 				<activeByDefault>true</activeByDefault>
 			</activation>
 			<properties>
-			    <log4j.rootLogger>WARN, stdout, file</log4j.rootLogger>
+			    <log4j.rootLogger>DEBUG, stdout, file</log4j.rootLogger>
 				<config.name>wish.config.properties</config.name>
 			</properties>
 		</profile>
 		<profile>
 			<id>ace</id>
 			<properties>
-			    <log4j.rootLogger>WARN, stdout, file, aceAppender</log4j.rootLogger>
+			    <log4j.rootLogger>DEBUG, aceAppender</log4j.rootLogger>
 				<config.name>wish.config.properties</config.name>
 			</properties>
 		</profile>
@@ -65,6 +65,17 @@
 		    <groupId>com.jfinal</groupId>
 		    <artifactId>cos</artifactId>
 		    <version>26Dec2008</version>
+		</dependency>
+		<!-- slf4j -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.7</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.7</version>
 		</dependency>
 		<!-- jackson -->
 		<dependency>
@@ -177,7 +188,7 @@
 						<warName>${artifactId}</warName>
 						<webResources>
 							<resource>
-								<directory>webapp</directory>
+								<directory>src/main/webapp</directory>
 							</resource>
 						</webResources>
 					</configuration>
