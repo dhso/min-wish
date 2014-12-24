@@ -32,12 +32,12 @@
         <div class="followus resize">
             <p>啦啦啦</p>
                 <ul>
-                    <li><a href="#" rel="tooltip" data-original-title="Facebook"><img src="${baseUrl}/static/page/images/fb.png" alt=""></a></li>
-                    <li><a href="#" rel="tooltip" data-original-title="Flickr"><img src="${baseUrl}/static/page/images/flickr.png" alt=""></a></li>
-                    <li><a href="#" rel="tooltip" data-original-title="Vimeo"><img src="${baseUrl}/static/page/images/vimeo.png" alt=""></a></li>
-                    <li><a href="#" rel="tooltip" data-original-title="Twitter"><img src="${baseUrl}/static/page/images/twitter.png" alt=""></a></li>
-                    <li><a href="#" rel="tooltip" data-original-title="Google Plus"><img src="${baseUrl}/static/page/images/g%2b.png" alt=""></a></li>
-                    <li><a href="#" rel="tooltip" data-original-title="Skype"><img src="${baseUrl}/static/page/images/skype.png" alt=""></a></li>
+                    <li><a href="#" rel="tooltip" data-original-title="Facebook"><img src="static/page/images/fb.png" alt=""></a></li>
+                    <li><a href="#" rel="tooltip" data-original-title="Flickr"><img src="static/page/images/flickr.png" alt=""></a></li>
+                    <li><a href="#" rel="tooltip" data-original-title="Vimeo"><img src="static/page/images/vimeo.png" alt=""></a></li>
+                    <li><a href="#" rel="tooltip" data-original-title="Twitter"><img src="static/page/images/twitter.png" alt=""></a></li>
+                    <li><a href="#" rel="tooltip" data-original-title="Google Plus"><img src="static/page/images/g%2b.png" alt=""></a></li>
+                    <li><a href="#" rel="tooltip" data-original-title="Skype"><img src="static/page/images/skype.png" alt=""></a></li>
                 </ul>
             <div class="clearfix"></div>
         </div>

@@ -1,9 +1,9 @@
 <!-- BEGIN JAVASCRIPTS -->
-<script type="text/javascript" src="${baseUrl}/static/page/js/jquery-1.7.2.js"></script>
-<script type="text/javascript" src="${baseUrl}/static/page/js/bootstrap.js"></script>
-<script type="text/javascript" src="${baseUrl}/static/page/js/jquery.countdown.js"></script>
-<script type="text/javascript" src="${baseUrl}/static/page/js/jquery.prettyPhoto.js"></script>
-<script type="text/javascript" src="${baseUrl}/static/page/js/selectnav.min.js"></script>
+<script type="text/javascript" src="static/page/js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="static/page/js/bootstrap.js"></script>
+<script type="text/javascript" src="static/page/js/jquery.countdown.js"></script>
+<script type="text/javascript" src="static/page/js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="static/page/js/selectnav.min.js"></script>
 <script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101167626" charset="utf-8"></script>
 <script>
 	var threadId = null;
@@ -20,7 +20,7 @@
 			}else{
 				if(confirm("确定要退出登录？")){
 					QC.Login.signOut();
-					$("#qqLoginBtn").css("background","url(${baseUrl}/static/page/images/Connect_logo_1.png) center no-repeat");
+					$("#qqLoginBtn").css("background","url(static/page/images/Connect_logo_1.png) center no-repeat");
 					$("#wish_from").attr("placeholder","匿名");
 					$("#qqLoginBtn").attr("data-original-title","登录QQ");
 					threadId = qqconnect();
@@ -101,7 +101,7 @@
 					if(nickname == "" && figureurl ==""){
 						QC.Login.getMe(function(openId, accessToken){
 							console.log(openId+","+accessToken);
-							var url = "${baseUrl}/qqLogin?access_token="+accessToken+"&openid="+openId;
+							var url = "qqLogin?access_token="+accessToken+"&openid="+openId;
 							$.getJSON(url, function(json){
 								nickname = json.nickname;
 								figureurl = json.figureurl_qq_1;
@@ -173,7 +173,7 @@
 				$("#qqLoginBtn").attr("onclick","QC.Login.signOut();");
 		   }, function(opts){//注销成功
 		         alert('QQ登录 注销成功');
-					$("#qqLoginBtn").css("background","url(${baseUrl}/static/page/images/Connect_logo_1.png) center no-repeat");
+					$("#qqLoginBtn").css("background","url(static/page/images/Connect_logo_1.png) center no-repeat");
 					$("#wish_from").attr("placeholder","匿名");
 		         $("#qqLoginBtn").attr("data-original-title","登录QQ账号");
 		         $("#qqLoginBtn").attr("onclick",aObj);

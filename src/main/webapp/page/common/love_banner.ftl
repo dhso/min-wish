@@ -11,9 +11,9 @@
 </div>
 countdown timer end
 </div> -->
-<div class="left-bg visible-desktop visible-tablet"><img src="${baseUrl}/static/page/images/banner-controlbg1.png" alt=""></div>
-   <div class="left-shadow"><img src="${baseUrl}/static/page/images/banner-corner-left.png" alt=""></div>
-   <div class="right-shadow"><img src="${baseUrl}/static/page/images/banner-corner-right.png" alt=""></div>
+<div class="left-bg visible-desktop visible-tablet"><img src="static/page/images/banner-controlbg1.png" alt=""></div>
+   <div class="left-shadow"><img src="static/page/images/banner-corner-left.png" alt=""></div>
+   <div class="right-shadow"><img src="static/page/images/banner-corner-right.png" alt=""></div>
    	<div id="myCarousel" class="carousel slide">
        <!-- Carousel items -->
 <div class="carousel-inner">
@@ -22,9 +22,9 @@ countdown timer end
 <div class="item"><img src="#" alt=""></div>
 </div>
 <!-- Carousel nav -->
-        <a class="carousel-control left" href="#myCarousel" data-slide="prev"><img src="${baseUrl}/static/page/images/left.png" alt=""></a>
-        <a class="carousel-control right" href="#myCarousel" data-slide="next"><img src="${baseUrl}/static/page/images/right.png" alt=""></a>
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev"><img src="static/page/images/left.png" alt=""></a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next"><img src="static/page/images/right.png" alt=""></a>
         </div>
-    <div class="right-bg visible-desktop visible-tablet"><img src="${baseUrl}/static/page/images/banner-controlbg2.png" alt=""></div>
+    <div class="right-bg visible-desktop visible-tablet"><img src="static/page/images/banner-controlbg2.png" alt=""></div>
 </div>
 <!--banners end-->

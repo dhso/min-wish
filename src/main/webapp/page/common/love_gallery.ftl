@@ -38,13 +38,13 @@
         </div>
         </div>
         <!-- Carousel nav -->
-        <a class="carousel-control left" href="#myCarousel2" data-slide="prev"><img src="${baseUrl}/static/page/images/left2.png" alt=""></a>
-        <a class="carousel-control right" href="#myCarousel2" data-slide="next"><img src="${baseUrl}/static/page/images/right2.png" alt=""></a>
+        <a class="carousel-control left" href="#myCarousel2" data-slide="prev"><img src="static/page/images/left2.png" alt=""></a>
+        <a class="carousel-control right" href="#myCarousel2" data-slide="next"><img src="static/page/images/right2.png" alt=""></a>
         </div>
     
     
     <span class="dot-left"></span>
     <span class="dot-right"></span>
-    <div class="flower"><img src="${baseUrl}/static/page/images/flower2.png" alt=""></div>
+    <div class="flower"><img src="static/page/images/flower2.png" alt=""></div>
 </div>
 <!--Gallery end-->
